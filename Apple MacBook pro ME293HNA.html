@@ -1,0 +1,112 @@
+<html>
+<head>
+<link rel="stylesheet"href="infoanimi.css"/>
+<link rel="stylesheet" href="infoProject.css"/>
+<script>
+function f()
+{
+}
+
+
+    function display( imgfile )
+         {
+            var bigImage = document.getElementById( "imgCover" );
+            var newNode = document.createElement( "img" );
+            newNode.id = "imgCover";
+            newNode.src = imgfile;
+            newNode.alt = "Large image";
+   			newNode.className = "imgCover";
+            newNode.style.width = "0px";
+            newNode.style.height = "0px";
+            bigImage.parentNode.replaceChild( newNode, bigImage );
+			var bigImage = document.getElementById( "imgCover" );
+			 bigImage.style.width = 800 + "px";
+            bigImage.style.height = 400 + "px";
+			
+         } 
+		 function f1()
+		{
+			localStorage.setItem("Apple MacBook pro ME293HN/A","144500");
+			localStorage.setItem("Apple MacBook pro ME293HN/A","144500");
+		}
+</script>
+<link href="Pmain.css" rel="stylesheet"/>
+</head>
+<body>
+<header>
+<p style="font-size:33px;">Apple MacBook pro ME293HN/A</p>
+</header>
+
+
+<div id="slider">
+<figure>
+<img src="a1.jpg" alt="">
+<img src="a2.jpg" alt="">
+<img src="a5.jpg" alt="">
+<img src="a6.jpg" alt="">
+<img src="a7.jpg" alt="">
+<img src="a8.jpg" alt="">
+<img src="a9.jpg" alt="">
+<img src="a10.jpg" alt="">
+<img src="a9.jpg" alt="">
+<img src="a2.jpg" alt="">
+<img src="a12.jpg" alt="">
+<img src="a6.jpg" alt="">
+<img src="a5.jpg" alt="">
+<img src="a13.jpg" alt="">
+<img src="a17.jpg" alt="">
+<img src="a5.jpg" alt="">
+</figure>
+</div>
+
+
+<div id="spec" class="spec" >
+         <img id = "imgCover" src = "a6.jpg" height="300px" width="600px"
+		    alt = "Full cover image" class = "imgCover"/>
+      
+
+	  
+<fieldset style="position:absolute;left:50%;top:75%;"><legend>Specifications</legend>
+<ul class="zoomInDown" type="square">
+<li><p>Price:Rs.1,44,500</p></li>
+<li><p>Intel Core i7(4th gen)</p></li>
+<li><p>8 GB DDR3 Ram</p></li>
+<li><p>256 GB Hard disk</p></li>
+<li><p>Iris pro Graphic card</p></li>
+<li><p>Display :15.4 in</p></li>
+<li><p>rating 3/5</p></li>
+</ul></fieldset>
+</div></br>
+<img src="a8.jpg" alt="Apple MacBook pro MGXC2HN/A"onclick="display( 'a8.jpg' )"/>
+<img src="a9.jpg"alt="Apple MacBook pro MGXC2HN/A"onclick="display( 'a9.jpg' )"/>
+<img src="a1.jpg" alt="Apple MacBook Air MJD760HN/A"onclick="display( 'a1.jpg' )"/>
+<img src="a10.jpg" alt="Apple MacBook pro MF841HN/A"onclick="display( 'a10.jpg' )"/>
+<img src="a17.jpg" alt="Apple MacBook pro MF841HN/A"onclick="display( 'a17.jpg' )"/>
+<img src="a12.jpg" alt="Apple MacBook pro MF841HN/A" onclick="display( 'a12.jpg' )"/>
+
+<div class="buy" id="buy">
+<fieldset style="position:absolute;left:80%;top:95%;"><legend>Buying section</legend></br>
+<form>
+<input type="button" style="height:30px;width:120px ;background-color:Orange"class="but" onclick="f1()" value="ADD TO CART"></input></br>
+<a href="buying.html"><input type="button" style="height:30px;width:120px;background-color:Orange" class="but" onclick="f()" value="BUY"></input></a></br>
+</form>
+</fieldset>
+</div>
+
+<hr></hr>
+
+<span style="padding:10px;"><button><a href="GOKART.html">GO TO HOME PAGE</a></button></span>
+<span style="padding:10px;"><button><a href="cart.html">GO TO CART</a></button></span></br>
+<footer class="tai" id="tai">
+<ul class="navb">
+<li>
+
+<li style="text-align:center" >Get Connected with us</li>
+<img class="lap" src="facebook.png" width="40px"height="40px"/>
+<img class="lap" src="twitter.png"width="40px"height="40px" />
+<img class="lap" src="google.png"width="40px"height="40px" />
+<img class="lap" src="youtube.png"width="40px"height="40px" />
+</li></ul>
+</footer>
+</body>
+</html>

@@ -1,0 +1,92 @@
+<html>
+<head>
+
+<style type="text/css">
+#man{
+text-align:center;
+padding:10px;
+margin:5px;
+background-color:DodgerBlue;
+font-style:Arabic ;
+font-size:40px;
+font-weight:bold;
+
+}
+
+
+body{font-size:40px;
+float:right;
+margin-right:700px;
+font-size:1.5em;}
+html{background-color:Turquoise;}
+form{margin:auto;
+padding:10px;}
+a{padding:25px;
+margin:15px;
+}
+input{padding:8px;
+margin:10px;
+width:150px;}
+#b{position:absolute;
+position-top:200px;
+margin-left:500px;}
+
+</style>
+<script type="text/javascript">
+function COD()
+{
+window.open("COD.html");
+}
+function Credit()
+{
+window.open("Credit.html");
+}
+function Debit()
+{
+window.open("Debit.html");
+}
+function Net()
+{
+window.open("NetBank.html");
+}
+function f5(){
+var b=document.getElementById("bd");
+
+var c=0;
+	for(var i=0;i<localStorage.length;i++)
+	{
+		if(localStorage.key(i)!=null)
+		{
+		
+		c+=parseInt(localStorage[localStorage.key(i)]);
+		
+		
+		}
+	}
+var t=document.createElement("div");
+	t.innerHTML+="Total amount to be paid for the products in cart ="+c;
+	b.appendChild(t);
+}
+</script>
+<body onload="f5()">
+<header id="man"><b>GO KART</b></header>
+<header><h1><mark>Online Marketing of Laptops</mark></h1></header>
+<hr></hr>
+<img src="applogo.png" alt="lenovo logo" height="40px"/>
+<img src="dellogo.png" alt="lenovo logo" height="40px"/>
+<img src="hplogo.png" alt="lenovo logo" height="40px"/>
+<img src="lenlogo.png" alt="lenovo logo" height="40px"/>
+<form>
+<a href="GOKART.html"><input type="button" id="b" value="GO TO HOME PAGE" style="position:absolute ;margin-left:20%;margin-top:-3%"/></a>
+</form>
+<hr></hr>
+<div class="mp"><h4>Mode Of payment</h4>
+<a href="Credit.html"><input type="button" id="m"value="cerdit card"/></a></br>
+<a href="Debit.html"><input type="button" id="m" value="debit card"/></a></br>
+<a href="thanks.html"><input type="button" id="m" value="cash on delivery"/></a></br>
+<a href="NetBank.html"><input type="button" id="m" value="net Banking"/></br></a>
+</div>
+</br>
+<div id="bd"></div>
+</body>
+</html>

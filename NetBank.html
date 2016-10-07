@@ -1,0 +1,114 @@
+<html>
+<head>
+
+<style type="text/css">
+#man{
+text-align:center;
+padding:10px;
+margin:5px;
+background-color:DodgerBlue;
+font-style:Arabic ;
+font-size:40px;
+font-weight:bold;
+color:Black;
+}
+
+fieldset,button{
+padding:10px;
+margin:15px;}
+input{
+	height:50px;
+	width:200px;
+	}
+#details input{
+	height:50px;
+	width:200px;
+	margin-top:20px;
+	position:relative ;margin-left:20%;
+	}
+body{font-size:40px;
+float:right;
+margin-right:700px;
+font-size:1.5em;}
+html{background-color:Silver;}
+form{margin:auto;}
+
+.mp button{size:20px;}
+</style>
+<script>
+function f5(){
+var b=document.getElementById("bd");
+
+var c=0;
+	for(var i=0;i<localStorage.length;i++)
+	{
+		if(localStorage.key(i)!=null)
+		{
+		
+		c+=parseInt(localStorage[localStorage.key(i)]);
+		
+		
+		}
+	}
+var t=document.createElement("div");
+	t.innerHTML+="Total amount to be paid for the products in cart ="+c;
+	b.appendChild(t);
+}
+</script>
+</head>
+<body onload="f5()">
+<header id="man"><b>GO KART</b></header>
+<header><h1><mark>Online Marketing of Laptops</mark></h1></header>
+<img src="applogo.png" alt="lenovo logo" height="40px"/>
+<img src="dellogo.png" alt="lenovo logo" height="40px"/>
+<img src="hplogo.png" alt="lenovo logo" height="40px"/>
+<img src="lenlogo.png" alt="lenovo logo" height="40px"/>
+<form>
+<a href="GOKART.html"><input type="button" id="b" value="GO TO HOME PAGE" style="position:absolute ;margin-left:20%;margin-top:-3%"/></a>
+</form>
+<hr></hr>
+<div>
+<form class="details" id="details">
+<!-- <fieldset id="pf" class="pf"><legend><h4>Personel informtion</h4></legend> -->
+BANK DETAILS</br>
+<span >
+<input type="text" name="Name" id="Na" placeholder="UserName" required/></br>
+<input type="text" name="ph.no" id="ph" placeholder="Contact Info" required/></br>
+<input type="text" name="ACC no." id="eml" placeholder="Account number" required/></br>
+
+<input type="text"name="password" id="pi"  placeholder="One time Password" required/></br>
+<input type="button" value="Check" onclick="vallid()"/>
+<a href="Paymentmode.html" id="dl"></a>
+<!-- </fieldset> -->
+</span>
+</form></div>
+<div id="bd"></div>
+<script type="text/javascript">
+
+var nx;
+function vallid()
+{
+	var x1=document.getElementById("Na");
+	var x2=document.getElementById("ph");
+	var x3=document.getElementById("eml");
+	var x4=document.getElementById("ad");
+	var x5=document.getElementById("pi");
+	if(x1.value==""||x2.value==""||x4.value==""||x5.value=="")
+		{
+				window.alert("Enter the fields properly");
+		}
+	else
+		{
+		nx=document.createElement("input");
+		nx.setAttribute("type","button");
+		nx.setAttribute("value","Submit");
+		var dl=document.getElementById("dl");
+		dl.appendChild(nx);
+		}
+}
+</script>
+
+
+</br>
+</body>
+</html>

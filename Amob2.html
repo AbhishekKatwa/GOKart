@@ -1,0 +1,111 @@
+<html>
+<head>
+<link rel="stylesheet" href="infoProjectM.css"/>
+<link rel="stylesheet"href="infoanimi.css"/>
+<script>
+function f()
+{
+}
+
+
+    function display( imgfile )
+         {
+            var bigImage = document.getElementById( "imgCover" );
+            var newNode = document.createElement( "img" );
+            newNode.id = "imgCover";
+            newNode.src = imgfile;
+            newNode.alt = "Large image";
+   			newNode.className = "imgCover";
+            newNode.style.width = "0px";
+            newNode.style.height = "0px";
+            bigImage.parentNode.replaceChild( newNode, bigImage );
+			var bigImage = document.getElementById( "imgCover" );
+			 bigImage.style.width = 800 + "px";
+            bigImage.style.height = 400 + "px";
+			
+         } 
+		  function f1()
+		{
+			localStorage.setItem("Apple iPhone 6s","62000");
+			localStorage.setItem("Apple iPhone 6s","62000");
+		}
+</script>
+<link href="PmainM.css" rel="stylesheet">
+</head>
+<header>
+<p style="font-size:33px;">Apple iPhone 6s </p>
+</header>
+<div id="slider">
+<figure>
+<img src="Am2.jpg" alt="">
+<img src="Am3.jpg" alt="">
+<img src="Am4.jpg" alt="">
+<img src="Am5.jpg" alt="">
+<img src="Am6.jpg" alt="">
+<img src="Am7.jpg" alt="">
+<img src="Am8.jpg" alt="">
+<img src="Am9.jpg" alt="">
+<img src="Am10.jpg" alt="">
+<img src="Am11.jpg" alt="">
+<img src="Am12.jpg" alt="">
+<img src="Am16.jpg" alt="">
+<img src="Am2.jpg" alt="">
+<img src="Am3.jpg" alt="">
+<img src="Am4.jpg" alt="">
+<img src="Am5.jpg" alt="">
+<img src="Am6.jpg" alt="">
+<img src="Am7.jpg" alt="">
+<img src="Am8.jpg" alt="">
+<img src="Am9.jpg" alt="">
+
+</figure>
+</div>
+
+
+<div id="spec" class="spec" >
+         <img id = "imgCover" src = "Am3.jpg" height="300px" width="600px"
+		    alt = "Full cover image" class = "imgCover"/>
+
+<fieldset style="position:absolute;left:50%;top:75%;"><legend>Specifications</legend>
+<ul class="zoomInDown""type="square">
+<li><p>Price:Rs.62,000</p></li>
+<li><p>Screen Display:4.70 inch</p></li>
+<li><p>Storage: 16GB</p></li>
+<li><p>RAM: 2 GB</p></li>
+<li><p>Processor: 1 Ghz</p></li>
+<li><p>Front Camera: 1.2 MP</p></li>
+<li><p>rating 4/5</p></li>
+</ul></fieldset>
+</div>
+
+<div class="buy" id="buy">
+<fieldset style="position:absolute;left:80%;top:95%;"><legend>Buying section</legend></br>
+<form>
+<input type="button" style="height:30px;width:120px ;background-color:Orange"class="but" onclick="f1()" value="ADD TO CART"></input></br>
+<a href="buying.html"><input type="button" style="height:30px;width:120px;background-color:Orange" class="but" onclick="f()" value="BUY"></input></a></br>
+</form>
+</fieldset>
+</div>
+     
+<img src="Am9.jpg" onclick="display( 'Am9.jpg' )"/>
+<img src="Am10.jpg" onclick="display( 'Am10.jpg' )"/>
+<img src="Am11.jpg" onclick="display( 'Aam11.jpg' )"/>
+<img src="Am12.jpg"onclick="display( 'Am12.jpg' )"/>
+
+
+<hr></hr>
+
+<span style="padding:10px;"><button><a href="GOKART.html">GO TO HOME PAGE</a></button></span>
+<span style="padding:10px;"><button><a href="cart.html">GO TO CART</a></button></span></br>
+<footer class="tai" id="tai">
+<ul class="navb">
+<li>
+<li style="text-align:center">Get Connected with us</li>
+<img class="lap" src="facebook.png" width="40px"height="40px"/>
+<img class="lap" src="twitter.png"width="40px"height="40px" />
+<img class="lap" src="google.png"width="40px"height="40px" />
+<img class="lap" src="youtube.png"width="40px"height="40px" />
+</li></ul>
+</footer>
+</body>
+</html>

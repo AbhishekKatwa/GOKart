@@ -1,0 +1,111 @@
+<html>
+<head>
+<link rel="stylesheet" href="infoProject.css"/>
+<link rel="stylesheet"href="infoanimi.css"/>
+<script>
+function f()
+{
+}
+
+
+    function display( imgfile )
+         {
+            var bigImage = document.getElementById( "imgCover" );
+            var newNode = document.createElement( "img" );
+            newNode.id = "imgCover";
+            newNode.src = imgfile;
+            newNode.alt = "Large image";
+   			newNode.className = "imgCover";
+            newNode.style.width = "0px";
+            newNode.style.height = "0px";
+            bigImage.parentNode.replaceChild( newNode, bigImage );
+			var bigImage = document.getElementById( "imgCover" );
+			 bigImage.style.width = 800 + "px";
+            bigImage.style.height = 400 + "px";
+			
+         } 
+		 function f1()
+		{
+			localStorage.setItem("5558 Notebook,8GB ram","50500");
+			localStorage.setItem("5558 Notebook,8GB ram","50500");
+		}
+</script>
+<link href="Pmain.css" rel="stylesheet">
+</head>
+<body>
+<header>
+<p style="font-size:33px;">5558 Notebook,8GB ram</p>
+</header>
+
+
+<div id="slider">
+<figure>
+<img src="d1.jpg" alt="">
+<img src="d2.jpg" alt="">
+<img src="d3.jpg" alt="">
+<img src="d4.jpg" alt="">
+<img src="d5.jpg" alt="">
+<img src="d6.jpg" alt="">
+<img src="d7.jpg" alt="">
+<img src="d8.jpg" alt="">
+<img src="d9.jpg" alt="">
+<img src="d10.jpg" alt="">
+<img src="d12.jpg" alt="">
+<img src="d1.jpg" alt="">
+<img src="d2.jpg" alt="">
+<img src="d3.jpg" alt="">
+<img src="d4.jpg" alt="">
+<img src="d5.jpg" alt="">
+</figure>
+</div></br>
+
+
+
+
+
+<div id="spec" class="spec" >
+
+         <img id = "imgCover" src = "d7.jpg" height="300px" width="600px"
+		    alt = "Full cover image" class = "imgCover"/>
+
+
+<fieldset style="position:absolute;left:50%;top:75%;"><legend>Specifications</legend>
+<ul class="zoomInDown" type="square">
+<li><p>Price:Rs.50,500</p></li>
+<li><p>Intel Core i5(5th gen)</p></li>
+<li><p>8 GB DDR3 Ram</p></li>
+<li><p>1 TB Hard disk</p></li>
+<li><p>2 GB Nvidia Graphic card</p></li>
+<li><p>Display :15.6 in</p></li>
+<li><p>rating 3.8/5</p></li>
+</ul></fieldset>
+</div></br>
+<img src="d7.jpg" alt="5558 Notebook,8GB ram"onclick="display( 'd7.jpg' )"/>
+<img src="d13.jpg" alt="5558 Notebook,8GB ram"onclick="display( 'd13.jpg' )"/>
+<img src="d2.jpg" alt="5558 Notebook,8GB ram"onclick="display( 'd2.jpg' )"/><hr></hr>
+
+<div class="buy" id="buy">
+<fieldset style="position:absolute;left:80%;top:95%;"><legend>Buying section</legend></br>
+<form>
+<input type="button" style="height:30px;width:120px ;background-color:Orange"class="but" onclick="f1()" value="ADD TO CART"></input></br>
+<a href="buying.html"><input type="button" style="height:30px;width:120px;background-color:Orange" class="but" onclick="f()" value="BUY"></input></a></br>
+</form>
+</fieldset>
+</div>
+
+<hr></hr>
+
+<span style="padding:10px;"><button><a href="GOKART.html">GO TO HOME PAGE</a></button></span>
+<span style="padding:10px;"><button><a href="cart.html">GO TO CART</a></button></span></br>
+<footer class="tai" id="tai">
+<ul class="navb">
+<li>
+<li style="text-align:center">Get Connected with us</li>
+<img class="lap" src="facebook.png" width="40px"height="40px"/>
+<img class="lap" src="twitter.png"width="40px"height="40px" />
+<img class="lap" src="google.png"width="40px"height="40px" />
+<img class="lap" src="youtube.png"width="40px"height="40px" />
+</li></ul>
+</footer>
+</body>
+</html>

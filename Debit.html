@@ -1,0 +1,102 @@
+<html>
+<head>
+<style type="text/css">
+body{font-size:20px;
+}
+#man{
+text-align:center;
+padding:10px;
+margin:5px;
+background-color:DodgerBlue;
+font-style:Arabic ;
+font-size:40px;
+font-weight:bold;
+}
+body{font-size:40px;
+float:right;
+margin-right:700px;
+font-size:1.5em;}
+html{background-color:SkyBlue;}
+form{margin:auto;
+padding:10px;}
+a{padding:25px;
+margin:15px;
+}
+input{
+	height:50px;
+	width:200px;
+	}
+</style>
+<script>
+
+function f5(){
+var b=document.getElementById("bd");
+
+var c=0;
+	for(var i=0;i<localStorage.length;i++)
+	{
+		if(localStorage.key(i)!=null)
+		{
+		
+		c+=parseInt(localStorage[localStorage.key(i)]);
+		
+		
+		}
+	}
+var t=document.createElement("div");
+	t.innerHTML+="Total amount to be paid for the products in cart ="+c;
+	b.appendChild(t);
+}
+</script>
+</head>
+<body onload="f5()">
+<header id="man"><b>GO KART</b></header>
+<header><h1><mark>Online Marketing of Laptops</mark></h1></header>
+<hr></hr>
+<img src="applogo.png" alt="lenovo logo" height="40px"/>
+<img src="dellogo.png" alt="lenovo logo" height="40px"/>
+<img src="hplogo.png" alt="lenovo logo" height="40px"/>
+<img src="lenlogo.png" alt="lenovo logo" height="40px"/>
+<form>
+<a href="GOKART.html"><input type="button" id="b" value="GO TO HOME PAGE" style="position:absolute ;margin-left:20%;margin-top:-3%"/></a>
+</form>
+<hr></hr><form class="details">
+<fieldset><legend><h4>Dedit card information</h4></legend>
+<pre>
+Name:		     <input type="text" name="Name" id="a1"/></br>
+phone no:	     <input type="text" name="ph.no" id="a2"/></br>
+Debit card number:   <input type="text" name="credit card" maxlength="15px" id="a3"/></br>
+Password: 	     <input type="password" name="password" maxlength="10px" id="a4"/></br>
+expiry date:         <input type="text"name="date" maxlength="6px" id="a5"/></br>
+<input type="button" value="Check" onclick="vallid()"/>
+
+ <a href="thanks.html" id="dl"></a>
+<pre>
+</fieldset>
+
+ <div id="bd"></div>
+<script type="text/javascript">
+var nx;
+function vallid()
+{
+	var x1=document.getElementById("a1");
+	var x2=document.getElementById("a2");
+	var x3=document.getElementById("a3");
+	var x4=document.getElementById("a4");
+	var x5=document.getElementById("a5");
+	if(a1.value==""||a2.value==""||a3.value==""||a4.value==""||a5.value=="")
+		{
+				window.alert("Enter the fields properly");
+		}
+	else
+		{
+		nx=document.createElement("input");
+		nx.setAttribute("type","button");
+		nx.setAttribute("value","submit");
+		var dl=document.getElementById("dl");
+		dl.appendChild(nx);
+		}
+}
+</script>
+</fieldset></body>
+</html>

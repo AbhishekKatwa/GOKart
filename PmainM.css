@@ -1,0 +1,78 @@
+
+h1{
+	
+color:Salmon;
+}
+header{
+	background-color:GreenYellow;
+	
+}
+html{
+background-color:;
+}
+p{
+font-family:Tahoma;
+font-size:20px;
+color:Blue;
+margin:30px;
+}
+body{
+background-image:url();
+background-position:right;
+background-attachment:fixed;
+background-repeat:no-repeat;
+}
+
+div{
+border:5px chocolate;
+}
+
+
+
+li{
+font-size:20px;
+}
+ul.navb{
+list-style-type:none;
+margin:0;
+padding:0;
+float:right;
+height:50px;
+}
+
+.tai{
+	background-color:Salmon;
+}
+.buy{
+	width:150px;
+}
+.spec {
+font-size:25px;
+background-color:;
+border:collapse;
+}
+
+img{
+
+ height:50px;
+ width:50px;
+ padding:15px;}
+
+.mainimg {
+ 
+ padding: 5px;
+}
+.imgCover {
+ height: 440px;
+width:600px;		
+ }
+button{
+	height:50px;
+	width:200px;
+	}
+.buy button{
+	height:45px;
+	width:200px;
+	margin-top:5px;
+}
+	

@@ -1,0 +1,72 @@
+<html>
+<head>
+<link rel="stylesheet" href="infoProjectM.css"/>
+<link rel="stylesheet"href="infoanimi.css"/>
+<link href="Pmain.css" rel="stylesheet">
+<style>
+
+.bd{
+width:40px;
+height:20px;
+font-color:red;
+font-size:20px;
+}
+</style>
+<script>
+
+var x="";
+window.onload=checkStorage;
+function checkStorage(e)
+{	
+	var b=document.getElementById("bd");
+var itm=document.getElementById("itm");
+var j=1;
+var c=0;
+	for(var i=0;i<localStorage.length;i++)
+	{
+		if(localStorage.key(i)!=null)
+		{
+		var d=document.createElement("div");
+		d.setAttribute("id","ca");
+		d.innerHTML=j+")"+"  "+localStorage.key(i)+"   ::::::::The Cost Is:"+localStorage[localStorage.key(i)];
+		c+=parseInt(localStorage[localStorage.key(i)]);
+		b.appendChild(d);
+		j++;
+		}
+	}
+	var t=document.createElement("div");
+	t.innerHTML+="Total amount is ="+c;
+	b.appendChild(t);
+}
+
+
+</script>
+
+</head>
+<body>
+<div class="itm" id="itm">
+</div>
+<span id="bd"  style="font-size:20px;font-family:Arial;font-color:'Blue';background-color:'HotPink'">
+
+</span>
+
+
+<div class="buy" id="buy">
+<form>
+<a href="buying.html"><input type="button" style="height:40px;width:150px;background-color:Grey;margin-left:150px;" class="but" onclick="f()" value="BUY"></input></a></br>
+</form>
+
+</div>
+
+
+<span style="padding:10px;"><button style="margin-left:140px;"><a href="GOKART.html">GO TO HOME PAGE</a></button></span>
+<ul class="navb">
+<li>
+<li style="text-align:center">Get Connected with us</li>
+<img class="lap" src="facebook.png" width="40px"height="40px"/>
+<img class="lap" src="twitter.png"width="40px"height="40px" />
+<img class="lap" src="google.png"width="40px"height="40px" />
+<img class="lap" src="youtube.png"width="40px"height="40px" />
+</li></ul>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<html>
+<head>
+<link rel="stylesheet" href="infoProject.css"/>
+<link rel="stylesheet"href="infoanimi.css"/>
+<script>
+function f()
+{
+}
+
+
+    function display( imgfile )
+         {
+            var bigImage = document.getElementById( "imgCover" );
+            var newNode = document.createElement( "img" );
+            newNode.id = "imgCover";
+            newNode.src = imgfile;
+            newNode.alt = "Large image";
+   			newNode.className = "imgCover";
+            newNode.style.width = "0px";
+            newNode.style.height = "0px";
+            bigImage.parentNode.replaceChild( newNode, bigImage );
+			var bigImage = document.getElementById( "imgCover" );
+			 bigImage.style.width = 800 + "px";
+            bigImage.style.height = 400 + "px";
+			
+         } 
+		 function f1()
+		{
+			localStorage.setItem("Lenovo Z50(80E501LRIN)","42738");
+			localStorage.setItem("Lenovo Z50(80E501LRIN)","42738");
+		}
+</script>
+<link href="Pmain.css" rel="stylesheet">
+</head>
+<body>
+<header>
+<p style="font-size:33px;"><caption>Lenovo Z50(80E501LRIN)</caption></p>
+</header>
+
+
+<div id="slider">
+<figure>
+<img src="l1.jpg" alt="">
+<img src="l2.jpg" alt="">
+<img src="l3.jpg" alt="">
+<img src="l4.jpg" alt="">
+<img src="l5.jpg" alt="">
+<img src="l6.jpg" alt="">
+<img src="l7.jpg" alt="">
+<img src="l5.jpg" alt="">
+<img src="l9.jpg" alt="">
+<img src="l2.jpg" alt="">
+<img src="l1.jpg" alt="">
+<img src="l4.jpg" alt="">
+<img src="l5.jpg" alt="">
+<img src="l6.jpg" alt="">
+<img src="l7.jpg" alt="">
+<img src="l9.jpg" alt="">
+</figure>
+</div>
+
+<div id="spec" class="spec" >
+         <img id = "imgCover" src = "l3.jpg" height="300px" width="600px"
+		    alt = "Full cover image" class = "imgCover"/>
+<fieldset style="position:absolute;left:50%;top:75%;"><legend>Specifications</legend>
+<ul class="rollIn"type="square">
+<li><p>Price:Rs.42,738</p></li>
+<li><p>Intel Core i5(5th gen)</p></li>
+<li><p>4 GB DDR3 Ram,2.2 GHz clock speed</p></li>
+<li><p>1 TB Hard disk</p></li>
+<li><p>2 GB AMD Graphic card</p></li>
+<li><p>Display :15.6 in</p></li>
+<li><p>rating 4/5</p></li>
+</ul></fieldset>
+</div>
+<img class="i"src="l1.jpg" height="50px" width="50px"alt="Lenovo Z50(80E501LRIN)"onclick="display('l1.jpg')"/>
+<img class="i"src="l3.jpg" alt="Lenovo Z50(80E501LRIN)"onclick="display('l3.jpg')"/>
+<img class="i"src="l5.jpg" alt="Lenovo Z50(80E501LRIN)"onclick="display('l5.jpg')"/>
+<img class="i"src="l7.jpg" alt="Lenovo Z50(80E501LRIN)"onclick="display('l7.jpg')"/>
+<img class="i"src="l9.jpg" alt="Lenovo Z50(80E501LRIN)"onclick="display('l9.jpg')"/><hr></hr>
+
+
+<div class="buy" id="buy">
+<fieldset style="position:absolute;left:80%;top:95%;"><legend>Buying section</legend></br>
+<form>
+<input type="button" style="height:30px;width:120px ;background-color:Orange"class="but" onclick="f1()" value="ADD TO CART"></input></br>
+<a href="buying.html"><input type="button" style="height:30px;width:120px;background-color:Orange" class="but" onclick="f()" value="BUY"></input></a></br>
+</form>
+</fieldset>
+</div>
+
+<hr></hr>
+<span style="padding:10px;"><button><a href="GOKART.html">GO TO HOME PAGE</a></button></span>
+<span style="padding:10px;"><button><a href="cart.html">GO TO CART</a></button></span></br>
+<footer class="tai" id="tai">
+<ul class="navb">
+<li>
+
+<li style="text-align:center" >Get Connected with us</li>
+<img class="lap" src="facebook.png" width="40px"height="40px"/>
+<img class="lap" src="twitter.png"width="40px"height="40px" />
+<img class="lap" src="google.png"width="40px"height="40px" />
+<img class="lap" src="youtube.png"width="40px"height="40px" />
+</li></ul>
+</footer>
+</body>
+</html>

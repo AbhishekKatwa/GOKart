@@ -1,0 +1,104 @@
+<html>
+<head>
+<link rel="stylesheet" href="infoProject.css"/>
+<link rel="stylesheet"href="infoanimi.css"/>
+<script>
+function f()
+{
+}
+
+
+    function display( imgfile )
+         {
+            var bigImage = document.getElementById( "imgCover" );
+            var newNode = document.createElement( "img" );
+            newNode.id = "imgCover";
+            newNode.src = imgfile;
+            newNode.alt = "Large image";
+   			newNode.className = "imgCover";
+            newNode.style.width = "0px";
+            newNode.style.height = "0px";
+            bigImage.parentNode.replaceChild( newNode, bigImage );
+			var bigImage = document.getElementById( "imgCover" );
+			 bigImage.style.width = 800 + "px";
+            bigImage.style.height = 400 + "px";
+			
+         } 
+		 function f1()
+		{
+			localStorage.setItem("HP Pavillion 11-n032tu x360 Netbook","32990");
+			localStorage.setItem("HP Pavillion 11-n032tu x360 Netbook","32990");
+		}
+</script>
+<link href="Pmain.css" rel="stylesheet">
+</head>
+<body>
+<header>
+<p style="font-size:33px;">HP Pavillion 11-n032tu x360 Netbook</p>
+</header>
+
+<div id="slider">
+<figure>
+<img src="h1.jpg" alt="">
+<img src="h2.jpg" alt="">
+<img src="h3.jpg" alt="">
+<img src="h4.jpg" alt="">
+<img src="h5.jpg" alt="">
+<img src="h6.jpg" alt="">
+<img src="h7.jpg" alt="">
+<img src="h8.jpg" alt="">
+<img src="h9.jpg" alt="">
+<img src="h10.jpg" alt="">
+<img src="h11.jpg" alt="">
+<img src="h12.jpg" alt="">
+<img src="h13.jpg" alt="">
+<img src="h1.jpg" alt="">
+<img src="h3.jpg" alt="">
+<img src="h11.jpg" alt="">
+</figure>
+</div>
+
+
+<div id="spec" class="spec" >
+
+         <img id = "imgCover" src = "h8.jpg"
+				height="300px" width="600px"
+		    alt = "Full cover image" class = "imgCover"/>
+ <fieldset style="position:absolute;left:50%;top:75%;"><legend>Specifications</legend>
+<ul class=""flip"type="square">
+<li><p>Price:Rs.32,990</p></li>
+<li><p>Intel pentium Quad Core (4th gen)</p></li>
+<li><p>4 GB DDR Ram,2.16 clock speed</p></li>
+<li><p>500 GB Hard disk</p></li>
+<li><p>2 GB Nvidia Graphic card</p></li>
+<li><p>rating 4/5</p></li>
+</ul></fieldset>
+</div>
+<img src="h8.jpg" alt="HP Pavillion 11-n032tu x360 Netbook"onclick="display( 'h8.jpg' )"/>
+<img src="h9.jpg"  alt="HP Pavillion 11-n032tu x360 Netbook"onclick="display( 'h9.jpg' )"/>
+<img src="h10.jpg" alt="HP Pavillion 11-n032tu x360 Netbook"onclick="display( 'h10.jpg' )"/><hr></hr>
+
+<div class="buy" id="buy">
+<fieldset style="position:absolute;left:80%;top:95%;"><legend>Buying section</legend></br>
+<form>
+<input type="button" style="height:30px;width:120px ;background-color:Orange"class="but" onclick="f1()" value="ADD TO CART"></input></br>
+<a href="buying.html"><input type="button" style="height:30px;width:120px;background-color:Orange" class="but" onclick="f()" value="BUY"></input></a></br>
+</form>
+</fieldset>
+</div>
+
+<hr></hr>
+<span style="padding:10px;"><button><a href="GOKART.html">GO TO HOME PAGE</a></button></span>
+<span style="padding:10px;"><button><a href="cart.html">GO TO CART</a></button></span></br>
+<footer class="tai" id="tai"><ul class="navb">
+<li>
+
+<li style="text-align:center" >Get Connected with us</li>
+<img class="lap" src="facebook.png" width="40px"height="40px"/>
+<img class="lap" src="twitter.png"width="40px"height="40px" />
+<img class="lap" src="google.png"width="40px"height="40px" />
+<img class="lap" src="youtube.png"width="40px"height="40px" />
+</li></ul>
+</footer>
+</body>
+</html>

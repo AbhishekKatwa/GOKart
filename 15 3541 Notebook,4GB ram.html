@@ -1,0 +1,108 @@
+<html>
+<head>
+<link rel="stylesheet" href="infoProject.css"/>
+<link rel="stylesheet"href="infoanimi.css"/>
+<script>
+function f()
+{
+}
+
+
+    function display( imgfile )
+         {
+            var bigImage = document.getElementById( "imgCover" );
+            var newNode = document.createElement( "img" );
+            newNode.id = "imgCover";
+            newNode.src = imgfile;
+            newNode.alt = "Large image";
+   			newNode.className = "imgCover";
+            newNode.style.width = "0px";
+            newNode.style.height = "0px";
+            bigImage.parentNode.replaceChild( newNode, bigImage );
+			var bigImage = document.getElementById( "imgCover" );
+			 bigImage.style.width = 800 + "px";
+            bigImage.style.height = 400 + "px";
+			
+         } 
+		 function f1()
+		{
+			localStorage.setItem("15 3541 Notebook,4GB ram","19997");
+			localStorage.setItem("15 3541 Notebook,4GB ram","19997");
+		}
+</script>
+<link href="Pmain.css" rel="stylesheet">
+</head>
+<body>
+<header>
+<p style="font-size:33px;">15 3541 Notebook,4GB ram</p>
+</header>
+<div id="slider">
+<figure>
+<img src="d1.jpg" alt="">
+<img src="d2.jpg" alt="">
+<img src="d3.jpg" alt="">
+<img src="d4.jpg" alt="">
+<img src="d5.jpg" alt="">
+<img src="d6.jpg" alt="">
+<img src="d7.jpg" alt="">
+<img src="d8.jpg" alt="">
+<img src="d9.jpg" alt="">
+<img src="d10.jpg" alt="">
+<img src="d13.jpg" alt="">
+<img src="d12.jpg" alt="">
+<img src="d1.jpg" alt="">
+<img src="d2.jpg" alt="">
+<img src="d3.jpg" alt="">
+<img src="d4.jpg" alt="">
+<img src="d5.jpg" alt="">
+</figure>
+</div></br>
+
+<div id="spec" class="spec" >
+
+         <img id = "imgCover" src = "d8.jpg" height="300px" width="600px"
+		    alt = "Full cover image" class = "imgCover"/>
+
+
+<fieldset style="position:absolute;left:50%;top:75%;"><legend>Specifications</legend>
+<ul class="zoomInDown""type="square">
+<li><p>Price:Rs.19,997</p></li>
+<li><p>AMD APU Quad Core</p></li>
+<li><p>4 GB DDR3 Ram,2.4 GHz Clock speed</p></li>
+<li><p>500 GB Hard disk</p></li>
+<li><p>2048 MB AMD Graphic card</p></li>
+<li><p>Display :15.6 in</p></li>
+<li><p>rating 3/5</p></li>
+</ul></fieldset>
+</div>
+
+<img src="d5.jpg" alt="15 3541 Notebook,4GB ram"onclick="display( 'd5.jpg' )"/>
+<img src="d6.jpg" alt="15 3541 Notebook,4GB ram"onclick="display( 'd6.jpg' )"/>
+<img src="d7.jpg" alt="15 3541 Notebook,4GB ram"onclick="display( 'd7.jpg' )"/>
+<img src="d8.jpg"alt="15 3541 Notebook,4GB ram"onclick="display( 'd8.jpg' )"/>
+<img src="d9.jpg" alt="15 3541 Notebook,4GB ram"onclick="display( 'd9.jpg' )"/><hr></hr>
+
+<div class="buy" id="buy">
+<fieldset style="position:absolute;left:80%;top:95%;"><legend>Buying section</legend></br>
+<form>
+<input type="button" style="height:30px;width:120px ;background-color:Orange"class="but" onclick="f1()" value="ADD TO CART"></input></br>
+<a href="buying.html"><input type="button" style="height:30px;width:120px;background-color:Orange" class="but" onclick="f()" value="BUY"></input></a></br>
+</form>
+</fieldset>
+</div>
+
+<hr></hr>
+<span style="padding:10px;"><button><a href="GOKART.html">GO TO HOME PAGE</a></button></span>
+<span style="padding:10px;"><button><a href="cart.html">GO TO CART</a></button></span></br>
+<footer class="tai" id="tai">
+<ul class="navb">
+<li>
+<li style="text-align:center">Get Connected with us</li>
+<img class="lap" src="facebook.png" width="40px"height="40px"/>
+<img class="lap" src="twitter.png"width="40px"height="40px" />
+<img class="lap" src="google.png"width="40px"height="40px" />
+<img class="lap" src="youtube.png"width="40px"height="40px" />
+</li></ul>
+</footer>
+</body>
+</html>

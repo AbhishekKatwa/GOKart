@@ -1,0 +1,116 @@
+<html>
+<head>
+
+<style type="text/css">
+#man{
+text-align:center;
+padding:10px;
+margin:5px;
+background-color:DodgerBlue;
+font-style:Arabic ;
+font-size:40px;
+font-weight:bold;
+color:Black;
+}
+
+fieldset,button{
+padding:10px;
+margin:15px;}
+input{
+	height:50px;
+	width:200px;
+	}
+#details input{
+	height:50px;
+	width:200px;
+	margin-top:20px;
+	position:relative ;margin-left:20%;
+	}
+body{font-size:40px;
+float:right;
+margin-right:700px;
+font-size:1.5em;}
+html{background-color:LemonChiffon;}
+form{margin:auto;}
+
+.mp button{size:20px;}
+</style>
+
+</head>
+<body>
+<header id="man"><b>GO KART</b></header>
+<header><h1><mark>Online Marketing of Laptops</mark></h1></header>
+<img src="applogo.png" alt="lenovo logo" height="40px"/>
+<img src="dellogo.png" alt="lenovo logo" height="40px"/>
+<img src="hplogo.png" alt="lenovo logo" height="40px"/>
+<img src="lenlogo.png" alt="lenovo logo" height="40px"/>
+<form>
+<a href="GOKART.html"><input type="button" id="b" value="GO TO HOME PAGE" style="position:absolute ;margin-left:20%;margin-top:-3%"/></a>
+</form>
+<hr></hr>
+<div>
+<form class="details" id="details">
+<!-- <fieldset id="pf" class="pf"><legend><h4>Personel informtion</h4></legend> -->
+PERSONEL DETAILS</br>
+<span >
+<input type="text" name="Name" id="Na" placeholder="UserName" onfocus="f1()" onblur="f6()" required/></br>
+<input type="text" name="ph.no" id="ph" placeholder="Contact Info" onfocus="f2()" onblur="f6()"required/></br>
+<input type="email" name="email" id="eml" placeholder="Email" onfocus="f3()" onblur="f6()"required/></br>
+
+<input type="text"name="pincode" id="pi"  placeholder="Pin-Code" onfocus="f4()" onblur="f6()"required/></br>
+<textarea name="address" rows="4" cols="25" id="ad" style="position:relative ;margin-left:20%;margin-top:20px" placeholder="Address" onfocus="f5()" onblur="f6()" required/></textarea></br>
+<input type="button" value="Check" onclick="vallid()"/>
+<a href="Paymentmode.html" id="dl"></a>
+<!-- </fieldset> -->
+</span>
+</form></div>
+<p id="p"></p>
+
+<script type="text/javascript">
+
+var nx;
+function vallid()
+{
+	var x1=document.getElementById("Na");
+	var x2=document.getElementById("ph");
+	var x3=document.getElementById("eml");
+	var x4=document.getElementById("ad");
+	var x5=document.getElementById("pi");
+	if(x1.value==""||x2.value==""||x4.value==""||x5.value=="")
+		{
+				window.alert("Enter the fields properly");
+		}
+	else
+		{
+		nx=document.createElement("input");
+		nx.setAttribute("type","button");
+		nx.setAttribute("value","Submit");
+		var dl=document.getElementById("dl");
+		dl.appendChild(nx);
+		}
+}
+var x=Array("Enter your name","Enter your contact number","Enter your Email","PinCode","Enter the Address","");
+function f1(){
+document.getElementById("p").innerHTML=x[0];
+}
+function f2(){
+document.getElementById("p").innerHTML=x[1];
+}
+function f3(){
+document.getElementById("p").innerHTML=x[2];
+}
+function f4(){
+document.getElementById("p").innerHTML=x[3];
+}
+function f5(){
+document.getElementById("p").innerHTML=x[4];
+}
+function f6(){
+document.getElementById("p").innerHTML=x[5];
+}
+</script>
+
+
+</br>
+</body>
+</html>
